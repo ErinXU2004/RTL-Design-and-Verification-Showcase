@@ -1,0 +1,65 @@
+[DRV] : DUT Reset Done
+------------------------------------------
+[GEN] : Oper : 0 iteration : 1
+[DRV] : DATA READ
+[MON] : Wr:0 rd:1 din:0 dout:0 full:0 empty:1
+[SCO] : Wr:0 rd:1 din:0 dout:0 full:0 empty:1
+[SCO] : FIFO IS EMPTY
+--------------------------------------
+[GEN] : Oper : 1 iteration : 2
+[DRV] : DATA WRITE  data : 9
+[MON] : Wr:1 rd:0 din:9 dout:0 full:0 empty:1
+[SCO] : Wr:1 rd:0 din:9 dout:0 full:0 empty:1
+[SCO] : DATA STORED IN QUEUE :9
+--------------------------------------
+[GEN] : Oper : 1 iteration : 3
+[DRV] : DATA WRITE  data : 3
+[MON] : Wr:1 rd:0 din:3 dout:0 full:0 empty:0
+[SCO] : Wr:1 rd:0 din:3 dout:0 full:0 empty:0
+[SCO] : DATA STORED IN QUEUE :3
+--------------------------------------
+[GEN] : Oper : 0 iteration : 4
+[DRV] : DATA READ
+[MON] : Wr:0 rd:1 din:3 dout:9 full:0 empty:0
+[SCO] : Wr:0 rd:1 din:3 dout:9 full:0 empty:0
+[SCO] : DATA MATCH
+--------------------------------------
+[GEN] : Oper : 0 iteration : 5
+[DRV] : DATA READ
+[MON] : Wr:0 rd:1 din:3 dout:3 full:0 empty:0
+[SCO] : Wr:0 rd:1 din:3 dout:3 full:0 empty:0
+[SCO] : DATA MATCH
+--------------------------------------
+[GEN] : Oper : 0 iteration : 6
+[DRV] : DATA READ
+[MON] : Wr:0 rd:1 din:3 dout:3 full:0 empty:1
+[SCO] : Wr:0 rd:1 din:3 dout:3 full:0 empty:1
+[SCO] : FIFO IS EMPTY
+--------------------------------------
+[GEN] : Oper : 1 iteration : 7
+[DRV] : DATA WRITE  data : 3
+[MON] : Wr:1 rd:0 din:3 dout:3 full:0 empty:1
+[SCO] : Wr:1 rd:0 din:3 dout:3 full:0 empty:1
+[SCO] : DATA STORED IN QUEUE :3
+--------------------------------------
+[GEN] : Oper : 0 iteration : 8
+[DRV] : DATA READ
+[MON] : Wr:0 rd:1 din:3 dout:3 full:0 empty:0
+[SCO] : Wr:0 rd:1 din:3 dout:3 full:0 empty:0
+[SCO] : DATA MATCH
+--------------------------------------
+[GEN] : Oper : 1 iteration : 9
+[DRV] : DATA WRITE  data : 4
+[MON] : Wr:1 rd:0 din:4 dout:3 full:0 empty:1
+[SCO] : Wr:1 rd:0 din:4 dout:3 full:0 empty:1
+[SCO] : DATA STORED IN QUEUE :4
+--------------------------------------
+[GEN] : Oper : 0 iteration : 10
+[DRV] : DATA READ
+[MON] : Wr:0 rd:1 din:4 dout:4 full:0 empty:0
+[SCO] : Wr:0 rd:1 din:4 dout:4 full:0 empty:0
+[SCO] : DATA MATCH
+--------------------------------------
+---------------------------------------------
+Error Count :0
+---------------------------------------------
