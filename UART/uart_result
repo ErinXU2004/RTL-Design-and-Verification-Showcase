@@ -1,0 +1,32 @@
+# KERNEL: [DRV] : RESET DONE
+# KERNEL: ----------------------------------------
+# KERNEL: [GEN]: Oper : read Din : 88
+# KERNEL: [DRV]: Data RCVD : 98
+# KERNEL: [MON] : DATA RCVD RX 98
+# KERNEL: [SCO] : DRV : 98 MON : 98
+# KERNEL: DATA MATCHED
+# KERNEL: ----------------------------------------
+# KERNEL: [GEN]: Oper : write Din : 10
+# KERNEL: [DRV]: Data Sent : 10
+# KERNEL: [MON] : DATA SEND on UART TX 10
+# KERNEL: [SCO] : DRV : 10 MON : 10
+# KERNEL: DATA MATCHED
+# KERNEL: ----------------------------------------
+# KERNEL: [GEN]: Oper : write Din : 39
+# KERNEL: [DRV]: Data Sent : 39
+# KERNEL: [MON] : DATA SEND on UART TX 39
+# KERNEL: [SCO] : DRV : 39 MON : 39
+# KERNEL: DATA MATCHED
+# KERNEL: ----------------------------------------
+# KERNEL: [GEN]: Oper : read Din : 254
+# KERNEL: [DRV]: Data RCVD : 224
+# KERNEL: [MON] : DATA RCVD RX 224
+# KERNEL: [SCO] : DRV : 224 MON : 224
+# KERNEL: DATA MATCHED
+# KERNEL: ----------------------------------------
+# KERNEL: [GEN]: Oper : write Din : 173
+# KERNEL: [DRV]: Data Sent : 173
+# KERNEL: [MON] : DATA SEND on UART TX 173
+# KERNEL: [SCO] : DRV : 173 MON : 173
+# KERNEL: DATA MATCHED
+# KERNEL: ----------------------------------------
