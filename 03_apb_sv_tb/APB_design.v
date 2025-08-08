@@ -22,17 +22,7 @@ module apb_s
   reg [1:0] state, nstate;
   
   bit  addr_err , addv_err, data_err;
-  ////////// setup - correct apb cycles
-  /////////  addr_range - should be less than 16
-  /////////   addr_val - be greater than or equal to 0
-  /////////   data_val - be greater than or equal to 0  
-/*
-Transactions that receive an error, might or might not have changed the state of the peripheral. 
-This is peripheral-specific and either is acceptable. 
-When a write transaction receives an error this does not mean that the register within the peripheral 
-has not been updated. Read transactions that receive an error can return invalid data.
- There is no requirement for the peripheral to drive the data bus to all 0s for a read error.
-*/
+
   ///// reset decoder
   always@(posedge pclk, negedge presetn)
     begin

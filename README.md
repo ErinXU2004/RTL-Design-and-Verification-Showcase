@@ -1,6 +1,6 @@
-# SystemVerilog Design & Verification Practice
+# HDL + SystemVerilog/UVM Verification Projects
 
-Welcome! This repository is a personal learning collection of **SystemVerilog design and verification projects**, built to deepen my understanding of digital logic and functional verification in preparation for applying to **chip design / verification roles**.
+This repository contains RTL design modules and their corresponding verification environments written in SystemVerilog and UVM.
 
 ## 📚 About This Repository
 
