@@ -1,56 +1,72 @@
-# HDL + SystemVerilog/UVM Verification Projects
+# RTL Design & Verification Collection
 
-This repository contains RTL design modules and their corresponding verification environments written in SystemVerilog and UVM.
+This repository contains my self-driven **RTL design** and **verification** projects, covering common digital interfaces, arithmetic circuits, and UVM-based verification environments.  
+It demonstrates my skills in **Verilog, SystemVerilog, and UVM**, including design, testbench development, and waveform analysis.
 
-## 📚 About This Repository
+## 📂 Project List
 
-Each folder in this repo contains a self-contained **design module** (e.g., flip-flop, FIFO, etc.) along with its:
+### 1. Common Interfaces (SystemVerilog Testbenches)
 
-- 💻 **Verilog design**
-- ✅ **SystemVerilog testbench**
-- 📈 **Simulation waveforms or output logs**
-- 🔍 Optional **monitor / scoreboard** logic if applicable
+- [**UART**](01_uart_sv_tb)  
+  - [RTL Design](01_uart_sv_tb/uart_design.v)  
+  - [SystemVerilog Testbench](01_uart_sv_tb/uart_tb.sv)  
+  - [Waveform Screenshot](01_uart_sv_tb/uart_transmitter.png)  
+  - [Simulation Result](01_uart_sv_tb/uart_result)
 
-This structure helps me build and verify reusable components while exploring different testbench methodologies.
+- [**FIFO**](02_fifo_sv_tb)  
+  - [RTL Design](02_fifo_sv_tb/fifo_design.v)  
+  - [SystemVerilog Testbench](02_fifo_sv_tb/fifo_tb.sv) 
+  - [Simulation Result](02_fifo_sv_tb/fifo_result)
 
-Also, I drew a diagram based on my understanding of testbench module:
+- [**APB**](03_apb_sv_tb)  
+  - [RTL Design](03_apb_sv_tb/APB_design.v)  
+  - [SystemVerilog Testbench](03_apb_sv_tb/APB_tb.sv)  
 
-![TestbenchModule](docs/Testbench%20Module%20Components.jpeg)
+- [**SPI**](04_spi_sv_tb)  
+  - [RTL Design](04_spi_sv_tb/spi_rtl.v)  
+  - [SystemVerilog Testbench](04_spi_sv_tb/spi_tb.sv)  
+  - [Waveform Screenshot](04_spi_sv_tb/spi_wave1_sv_tb.png)  
+  - [Simulation Result](04_spi_sv_tb/spi_result)
 
+- [**I2C**](05_i2c_sv_tb)  
+  - [RTL Design](05_i2c_sv_tb/i2c_rtl.v)  
+  - [SystemVerilog Testbench](05_i2c_sv_tb/i2c_tb.sv)  
 
-## 📁 Modules Included So Far
-
-- **D Flip-Flop (DFF)**
-  - [RTL design](D-Flipflop/dff_design.v) using procedural always blocks
-  - Class-based [testbench](D-Flipflop/dff_tb1.sv) with stimulus generation and output checking
-  - Result [Waveform](D-Flipflop/dff_wave1.png) with Value from Random Generator & Driver
-
-- **FIFO (First-In First-Out Buffer)**
-  - Behavioral and structural [FIFO implementation](FIFO/fifo_design.v)
-  - Randomized read/write stimulus with scoreboard-based verification [testbench](FIFO/fifo_tb.sv)
-
-
-
-## 🛠 Tools Used
-
-- **Platform:** [EDA Playground](https://edaplayground.com/)
-- **Simulators:** 
-  - Synopsys VCS
-  - Cadence Xcelium
-
-These simulators support SystemVerilog OOP features such as classes, mailboxes, interfaces, and assertions.
-
-
-## 💡 Goals
-
-- Build hands-on experience with **RTL design** and **testbench construction**
-- Apply **SystemVerilog OOP verification concepts** (e.g., transactions, drivers, monitors)
-- Practice **simulation debugging and waveform analysis**
-- Prepare for interviews and real-world SoC/ASIC verification tasks
+- [**FIFO (Alt Implementation)**](06_fifo_sv_tb)  
+  - [RTL Design](06_fifo_sv_tb/dff_rtl.v)  
+  - [SystemVerilog Testbench](06_fifo_sv_tb/dff_tb1.sv)  
+  - [Waveform Screenshot](06_fifo_sv_tb/dff_wave1.png)  
+  - [Simulation Result](04_spi_sv_tb/spi_result)
 
 
 
-## 📬 Contact
+### 2. Arithmetic Circuits (UVM Testbenches)
 
-If you're a hiring manager or mentor in digital design or verification, feel free to explore this repo or connect with me!
+- [**Combinational Adder**](07_comb_adder_uvm_tb) (UVM Testbench)
+  - [RTL Design](07_comb_adder_uvm_tb/comb_adder_rtl.v)  
+  - [UVM Testbench](07_comb_adder_uvm_tb/uvm_add_tb.sv)
 
+- [**Sequential Adder**](08_seq_adder_uvm_tb) (UVM Testbench) 
+  - [RTL Design](08_seq_adder_uvm_tb/seq_adder_rtl.v)  
+  - [UVM Testbench](08_seq_adder_uvm_tb/uvm_add_tb.sv)
+
+
+
+## 💡 Skills Demonstrated
+
+- **HDL Languages**: Verilog, SystemVerilog
+- **Verification Methodology**: UVM
+- **Digital Design Concepts**:
+  - UART, SPI, I2C protocols
+  - FIFO design and verification
+  - APB bus interface
+  - Combinational & sequential arithmetic circuits
+- **Verification Artifacts**:
+  - Self-written SystemVerilog & UVM testbenches
+  - Captured simulation results and waveforms
+
+
+
+## 📄 Documentation
+
+Additional design notes and diagrams are in the [docs/](docs) folder.
