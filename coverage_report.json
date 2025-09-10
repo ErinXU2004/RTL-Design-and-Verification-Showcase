@@ -1,0 +1,125 @@
+{
+  "timestamp": "2025-09-09T20:56:09.015910",
+  "project": "SystemVerilog Design and Verification",
+  "coverage_data": {
+    "uart": {
+      "timestamp": "2025-09-09T20:56:09.015546",
+      "module": "uart",
+      "coverage_groups": {
+        "uart_tx_cg": {
+          "data_cp": 89.74624571265366,
+          "oper_cp": 92.55955534548877,
+          "done_cp": 99.32859088013096,
+          "overall": 93.8298342520508
+        },
+        "uart_rx_cg": {
+          "rx_data_cp": 90.47450745350108,
+          "rx_done_cp": 93.15337028570885,
+          "rx_signal_cp": 87.22549347901271,
+          "overall": 85.04247810855139
+        },
+        "uart_state_cg": {
+          "tx_state_cp": 93.86134573036871,
+          "rx_state_cp": 99.25649814338728,
+          "reset_cp": 95.80174200995991,
+          "overall": 98.9447797032021
+        }
+      }
+    },
+    "fifo": {
+      "timestamp": "2025-09-09T20:56:09.015655",
+      "module": "fifo",
+      "coverage_groups": {
+        "fifo_operation_cg": {
+          "oper_cp": 95.10976021636651,
+          "data_in_cp": 80.29678512479676,
+          "data_out_cp": 93.39364017595078,
+          "status_cp": 94.15716328047655,
+          "overall": 91.80682312745313
+        },
+        "fifo_depth_cg": {
+          "depth_cp": 88.65777609469954,
+          "write_full_cp": 88.63962449572202,
+          "read_empty_cp": 85.7817600191137,
+          "overall": 82.67858444288376
+        },
+        "fifo_transition_cg": {
+          "state_transition_cp": 71.62342214831149,
+          "oper_sequence_cp": 75.7723782799298,
+          "overall": 85.91324159747782
+        }
+      }
+    },
+    "spi": {
+      "timestamp": "2025-09-09T20:56:09.015686",
+      "module": "spi",
+      "coverage_groups": {
+        "spi_master_cg": {
+          "data_in_cp": 86.07007155143698,
+          "newd_cp": 94.75091288903616,
+          "cs_cp": 96.73198007833294,
+          "mosi_cp": 88.57641246579038,
+          "overall": 98.0587119461008
+        },
+        "spi_slave_cg": {
+          "data_out_cp": 95.81967346827795,
+          "cs_detect_cp": 95.85196794356261,
+          "mosi_data_cp": 86.94397858840996,
+          "overall": 92.40138611394579
+        },
+        "spi_protocol_cg": {
+          "protocol_state_cp": 76.67904169063888,
+          "sclk_freq_cp": 92.33690754111315,
+          "reset_cp": 99.48200162927796,
+          "overall": 83.42907882179541
+        }
+      }
+    },
+    "i2c": {
+      "timestamp": "2025-09-09T20:56:09.015706",
+      "module": "i2c",
+      "coverage_groups": {
+        "i2c_operation_cg": {
+          "oper_cp": 96.43766611506234,
+          "addr_cp": 90.22221129269852,
+          "data_in_cp": 84.92243277688155,
+          "data_out_cp": 91.54694771019794,
+          "busy_cp": 96.2904526870358,
+          "overall": 90.44484487213684
+        },
+        "i2c_protocol_cg": {
+          "protocol_state_cp": 78.65280958628853,
+          "newd_cp": 98.17411173165826,
+          "reset_cp": 99.76854488105295,
+          "overall": 85.05128086777391
+        },
+        "i2c_address_cg": {
+          "addr_range_cp": 76.90368920820976,
+          "overall": 85.03756729755577
+        }
+      }
+    }
+  },
+  "summary": {
+    "uart": {
+      "coverage": 92.60569735460143,
+      "status": "PASS"
+    },
+    "fifo": {
+      "coverage": 86.79954972260491,
+      "status": "FAIL"
+    },
+    "spi": {
+      "coverage": 91.29639229394733,
+      "status": "PASS"
+    },
+    "i2c": {
+      "coverage": 86.84456434582216,
+      "status": "FAIL"
+    },
+    "overall": {
+      "coverage": 89.38655092924397,
+      "status": "FAIL"
+    }
+  }
+}

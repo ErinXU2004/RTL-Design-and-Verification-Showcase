@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coverage Report - SystemVerilog Design and Verification</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .header { background-color: #f0f0f0; padding: 20px; border-radius: 5px; }
+        .module { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .coverage-bar { background-color: #e0e0e0; height: 20px; border-radius: 10px; margin: 5px 0; }
+        .coverage-fill { height: 100%; border-radius: 10px; transition: width 0.3s; }
+        .high { background-color: #4CAF50; }
+        .medium { background-color: #FF9800; }
+        .low { background-color: #f44336; }
+        .summary { background-color: #f9f9f9; padding: 15px; border-radius: 5px; margin: 20px 0; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Coverage Report</h1>
+        <p>SystemVerilog Design and Verification Project</p>
+        <p>Generated: 2025-09-09 20:56:09</p>
+    </div>
+
+    <div class="module">
+        <h2>UART Module Coverage: 92.61%</h2>
+        <div class="coverage-bar">
+            <div class="coverage-fill high" style="width: 92.6%; background-color: #4CAF50;"></div>
+        </div>
+        <table>
+            <tr><th>Coverage Group</th><th>Coverage %</th><th>Status</th></tr>
+            <tr><td>uart_tx_cg</td><td>93.83%</td><td>PASS</td></tr>
+            <tr><td>uart_rx_cg</td><td>85.04%</td><td>FAIL</td></tr>
+            <tr><td>uart_state_cg</td><td>98.94%</td><td>PASS</td></tr>
+        </table>
+    </div>
+
+    <div class="module">
+        <h2>FIFO Module Coverage: 86.80%</h2>
+        <div class="coverage-bar">
+            <div class="coverage-fill medium" style="width: 86.8%; background-color: #FF9800;"></div>
+        </div>
+        <table>
+            <tr><th>Coverage Group</th><th>Coverage %</th><th>Status</th></tr>
+            <tr><td>fifo_operation_cg</td><td>91.81%</td><td>PASS</td></tr>
+            <tr><td>fifo_depth_cg</td><td>82.68%</td><td>FAIL</td></tr>
+            <tr><td>fifo_transition_cg</td><td>85.91%</td><td>FAIL</td></tr>
+        </table>
+    </div>
+
+    <div class="module">
+        <h2>SPI Module Coverage: 91.30%</h2>
+        <div class="coverage-bar">
+            <div class="coverage-fill high" style="width: 91.3%; background-color: #4CAF50;"></div>
+        </div>
+        <table>
+            <tr><th>Coverage Group</th><th>Coverage %</th><th>Status</th></tr>
+            <tr><td>spi_master_cg</td><td>98.06%</td><td>PASS</td></tr>
+            <tr><td>spi_slave_cg</td><td>92.40%</td><td>PASS</td></tr>
+            <tr><td>spi_protocol_cg</td><td>83.43%</td><td>FAIL</td></tr>
+        </table>
+    </div>
+
+    <div class="module">
+        <h2>I2C Module Coverage: 86.84%</h2>
+        <div class="coverage-bar">
+            <div class="coverage-fill medium" style="width: 86.8%; background-color: #FF9800;"></div>
+        </div>
+        <table>
+            <tr><th>Coverage Group</th><th>Coverage %</th><th>Status</th></tr>
+            <tr><td>i2c_operation_cg</td><td>90.44%</td><td>PASS</td></tr>
+            <tr><td>i2c_protocol_cg</td><td>85.05%</td><td>FAIL</td></tr>
+            <tr><td>i2c_address_cg</td><td>85.04%</td><td>FAIL</td></tr>
+        </table>
+    </div>
+
+    <div class="summary">
+        <h2>Summary</h2>
+        <p><strong>Overall Project Coverage: 89.39%</strong></p>
+        <p>Status: FAIL</p>
+        <p>Modules Tested: 4</p>
+    </div>
+</body>
+</html>
